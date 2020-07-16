@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kojimankix/testOne.git"
+    "url": "git+https://github.com/kojimankix/Homework.git"
   },
   "author": "mankix",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kojimankix/testOne/issues"
+    "url": "https://github.com/kojimankix/Homework/issues"
   },
-  "homepage": "https://github.com/kojimankix/testOne#readme",
+  "homepage": "https://github.com/kojimankix/Homework#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "chalk": "^4.1.0",
