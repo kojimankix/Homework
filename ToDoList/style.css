@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada:wght@400;600&family=Lobster&family=Signika:wght@300;400;515&display=swap');
+body {
+    background: #3D3D3D;
+}
+.list1 {
+    position: absolute;
+    width: 335px;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    margin-left: 12;
+    margin-top: 10;
+}
+.back {
+    position: absolute;
+    width: 400px;
+    height: 720px;
+    background: #e2e2e2;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.back1 {
+    position: absolute;
+    width: 360px;
+    height: 528px;
+    background: #eeeeee;
+    margin-top: 192;
+    margin-left: 20;
+}
+.back2 {
+    position: absolute;
+    width: 400px;
+    height: 220px;
+    background: linear-gradient(180deg, rgba(0, 255, 255, 0.9) 0%, rgba(0, 255, 26, 0.486) 100%);
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 130px;
+    color: #000000;
+    text-align: center;
+}
+.field {
+    width: 360px;
+    height: 70px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 3px solid #000000;
+    line-height: 60px;
+    font-size: 36px;
+    margin-top: -20;
+    font-family: 'Signika', sans-serif;
+    outline: none;
+}
+.but {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #000000;
+    background: #000000;
+    font-size: 60px;
+    color: white;
+    border-radius: 40px;
+    margin-top: 450;
+    margin-left: 140;
+    line-height: 55px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    border: 3px solid #40e6b4;
+    background: #40e6b4;
+    color: black;
+    outline: none;
+}
+button:active{
+    background: #38cfa2;
+    border: 1px solid #38cfa2;
+    color: black;
+    outline: none;
+}
