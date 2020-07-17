@@ -6,18 +6,20 @@ body {
     position: absolute;
     width: 335px;
     height: 70px;
-    background: rgb(0, 0, 0);
+    /*background: rgb(0, 0, 0);*/
     mix-blend-mode: normal;
     border-radius: 20px;
-    text-align: center;
+    /*text-align: center;*/
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
     line-height: 60px;
-    color: white;
-    margin-left: 12;
+    color: black;
+    /*margin-left: 12;*/
+    margin-left: 30;
     margin-top: 10;
+    display: none;
 }
 .back {
     position: absolute;
@@ -27,6 +29,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .back1 {
     position: absolute;
@@ -76,6 +79,23 @@ body {
     cursor: pointer;
     outline: none;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.but1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #000000;
+    background: #000000;
+    font-size: 30px;
+    color: white;
+    border-radius: 40px;
+    margin-top: 450;
+    margin-left: 260;
+    line-height: 55px;
+    cursor: pointer;
+    outline: none;
+    font-family: Arial;
 }
 
 button:hover {
