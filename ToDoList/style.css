@@ -1,25 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lemonada:wght@400;600&family=Lobster&family=Signika:wght@300;400;515&display=swap');
 body {
     background: #3D3D3D;
+    overflow: hidden;
 }
-.list1 {
-    position: absolute;
-    width: 335px;
-    height: 70px;
-    /*background: rgb(0, 0, 0);*/
+.list1 li{
+    position: relative;
+    width: 330px;
+    height: 50px;
     mix-blend-mode: normal;
     border-radius: 20px;
-    /*text-align: center;*/
+    text-align: left;
+    padding: 0 0px 0 5px;
     font-family: 'Signika', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 30px;
-    line-height: 60px;
-    color: black;
-    /*margin-left: 12;*/
-    margin-left: 30;
+    margin-left: -28;
     margin-top: 10;
-    display: none;
+    line-height: 50px;
+    list-style-type: none;
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: 2px solid black;
+}
+
+.listselected {
+    background: black;
+    color: white;  
 }
 .back {
     position: absolute;
@@ -27,17 +35,21 @@ body {
     height: 720px;
     background: #e2e2e2;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 35%;
+    margin-top: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 .back1 {
     position: absolute;
-    width: 360px;
-    height: 528px;
+    width: 370px;
+    height: 458px;
     background: #eeeeee;
     margin-top: 192;
-    margin-left: 20;
+    margin-left: 15;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-radius: 15px;
 }
 .back2 {
     position: absolute;
@@ -51,9 +63,10 @@ body {
     line-height: 130px;
     color: #000000;
     text-align: center;
+    border-radius: 10px;
 }
 .field {
-    width: 360px;
+    width: 370px;
     height: 70px;
     background: #FFFFFF;
     mix-blend-mode: normal;
@@ -73,8 +86,8 @@ body {
     font-size: 60px;
     color: white;
     border-radius: 40px;
-    margin-top: 450;
-    margin-left: 140;
+    margin-top: 655px;
+    margin-left: 45px;
     line-height: 55px;
     cursor: pointer;
     outline: none;
@@ -87,15 +100,32 @@ body {
     height: 60px;
     border: 3px solid #000000;
     background: #000000;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
     border-radius: 40px;
-    margin-top: 450;
-    margin-left: 260;
+    margin-top: 655px;
+    margin-left: 285px;
     line-height: 55px;
     cursor: pointer;
     outline: none;
-    font-family: Arial;
+    font-family: "Calibri";
+}
+
+.but2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid #000000;
+    background: #000000;
+    font-size: 30px;
+    color: white;
+    border-radius: 40px;
+    margin-top: 655px;
+    margin-left: 165px;
+    line-height: 0;
+    cursor: pointer;
+    outline: none;
+    font-family: "Calibri";
 }
 
 button:hover {

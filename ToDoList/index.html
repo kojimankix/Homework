@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>ToDoList</title>
 </head>
 <body>
@@ -13,11 +14,12 @@
         </input>
         </div>
         <div class = "back1" id = "back1">
-            <div class = "list1" id = "list">
-            </div>
-            <button onclick = "add_list();" class = "but">+</button>
-            <button onclick = "delete_list();" class = "but1">Del</button>
+            <ul class = "list1" id = "list">
+            </ul>
         </div>
+        <button class = "but2" id = "deleteonelist">Del</button>
+        <button class = "but" id = "addlist">+</button>
+        <button class = "but1" id = "deletelist">X</button>
     </div>
     <script src = "script.js"></script>
 </body>
