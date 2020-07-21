@@ -19,6 +19,14 @@ function deleteTodo() {
         });
     }
 }
+
+function loadTodos() {
+    console.log(localStorage.getItem("todolist"));
+    if (localStorage.getItem("todolist")) {
+        ul.innerHTML = localStorage.getItem("todolist");
+    }
+}
+
 pencil.addEventListener("click", function(){
     input.classList.toggle("display");
 });
@@ -69,4 +77,6 @@ saveBtn.addEventListener("click", function(){
     localStorage.setItem("todolist", ul.innerHTML);
     console.log(localStorage);
 });
+loadTodos();
+deleteTodo();
 
