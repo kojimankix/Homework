@@ -1,82 +1,32 @@
-var input = document.querySelector("input[type='text']");
-var ul = document.querySelector("ul");
-var container = document.querySelector("div");
-var lists = document.querySelectorAll("li");
-var spans = document.getElementsByTagName("span");
-var pencil = document.querySelector("#pencil");
-var saveBtn = document.querySelector(".save");
-var clearBtn = document.querySelector(".clear");
-var lists = document.querySelectorAll("li");
-var tipsBtn = document.querySelector(".tipBtn");
-var closeBtn = document.querySelector(".closebtn");
-var overlay = document.getElementById("overlay");
+import {pencil} from "./pencil.js";
+pencil();
 
-function deleteTodo() {
-    for(let span of spans) {
-        span.addEventListener("click", function(){
-            console.log(span.parentElement);
-            span.parentElement.remove();
-        });
-    }
-}
+import {tipsBtn} from "./tipsBtn.js";
+tipsBtn();
 
-function loadTodos() {
-    console.log(localStorage.getItem("todolist"));
-    if (localStorage.getItem("todolist")) {
-        ul.innerHTML = localStorage.getItem("todolist");
-    }
-}
+import {closeBtn} from "./closeBtn.js";
+closeBtn();
 
-pencil.addEventListener("click", function(){
-    input.classList.toggle("display");
-});
+// Add todo and delete todo element list
+import {input, deleteTodo} from "./input.js";
+input();
 
-ul.addEventListener("click", function (e){
-    if (e.target.tagName === "LI") {
-        e.target.classList.toggle("checked");
-    }
-});
+import {ul} from "./ul.js";
+ul();
 
-tipsBtn.addEventListener("click", function() {
-    overlay.style.height = "100%";
-});
-
-closeBtn.addEventListener("click", function() {
-    event.preventDefault();
-    overlay.style.height = "0";
-});
-
-// Add todo todo element list
-input.addEventListener("keypress", function (key) {
-    if(key.which === 13) {
-
-        var li = document.createElement("li");
-        var spanElement = document.createElement("span");
-        var icon = document.createElement("i");
-        if(this.value == ""){
-            alert("You have not entered anything!");
-        }
-        else{
-        var newTodo = this.value;
-        this.value = "";
-
-        icon.classList.add("fas", "fa-trash-alt");
-        console.log(icon.classList);
-        spanElement.append(icon);
-        ul.appendChild(li).append(spanElement, newTodo);
-
-        deleteTodo();
-    }
-}
-});
 // Clear all todos on click Clear button
-clearBtn.addEventListener("click", function(){
-    ul.innerHTML = "";
-});
-saveBtn.addEventListener("click", function(){
-    localStorage.setItem("todolist", ul.innerHTML);
-    console.log(localStorage);
-});
+import {clearBtn} from "./clearBtn.js";
+clearBtn();
+
+import {saveBtn, loadTodos} from "./saveBtn.js";
+saveBtn();
+
 loadTodos();
 deleteTodo();
 
+import {arr} from "./arr.js";
+console.log(arr);
+alert("Массив "+arr);
+/*$.getJSON ('https://randomfox.ca/floof/', function(data) {
+    $("#picture").append("<p>"+data+"</p>");
+});*/
