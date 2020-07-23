@@ -1,13 +1,4 @@
-function deleteTodo() {
-    for(let span of document.getElementsByTagName("span")) {
-        span.addEventListener("click", function(){
-            console.log(span.parentElement);
-            span.parentElement.remove();
-        });
-    }
-}
-
-function input() {
+function input(call) {
     document.querySelector("input[type='text']").addEventListener("keypress", function (key) {
     if(key.which === 13) {
 
@@ -26,9 +17,9 @@ function input() {
         spanElement.append(icon);
         document.querySelector("ul").appendChild(li).append(spanElement, newTodo);
 
-        deleteTodo();
+        call();
     }
 }
 });
 }
-export {input, deleteTodo};
+export {input};
